@@ -1,0 +1,28 @@
+Ejercicio: Clasificando excepciones:
+Dados los siguientes casos de error, determinar si corresponde modelar la excepción de tipo checked o unchecked.
+
+División de un número por 0: Esto debería ser una excepción de tipo unchecked (ArithmeticException) ya que es un error aritmético que 
+generalmente indica un problema en el código o en los datos de entrada.
+
+Formato de número de teléfono incorrecto: Esto debería ser una excepción de tipo checked (NumberFormatException) ya que generalmente se espera que 
+el programa maneje esta situación cuando se procesan datos de entrada.
+
+No se puede abrir el archivo solicitado: Esto debería ser una excepción de tipo checked (IOException) ya que es una situación esperada que puede ocurrir 
+durante la operación de lectura/escritura de archivos y el programa debe manejarla adecuadamente.
+
+No existe el archivo a acceder: Esto debería ser una excepción de tipo checked (FileNotFoundException) ya que también es una 
+situación esperada que el programa debe manejar cuando intenta acceder a un archivo que no existe.
+
+Operación aritmética no soportada en cierto tipo de dato: Esto debería ser una excepción de tipo unchecked (UnsupportedOperationException) 
+o una excepción personalizada, dependiendo de cómo quieras modelarla. Debería ser checked si quieres que el programa maneje explícitamente esta situación.
+
+Se superó el límite de capacidad de la estructura: Esto debería ser una excepción personalizada de tipo unchecked, es ajeno al programa. 
+
+La configuración externa de la aplicación es incorrecta: Esto debería ser una excepción de tipo unchecked (ConfigurationException) 
+o una excepción personalizada, dependiendo de cómo quieras modelarla. 
+
+Falló la conexión a la base de datos: Esto debería ser una excepción de tipo checked (SQLException) o una excepción personalizada, 
+dependiendo de cómo quieras modelarla.
+
+Se convierte una referencia a un subtipo (downcasting) que no corresponde: Esto debería ser una excepción de tipo unchecked 
+(ClassCastException) ya que generalmente indica un error de programación al realizar una conversión de tipos incompatible.
